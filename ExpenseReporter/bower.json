@@ -1,0 +1,17 @@
+{
+  "name": "angular-fluent-validation",
+  "version": "1.0.0.1",
+  "authors": [
+    "Ricardo Vargas<rkrdo.vrgs@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jasmine": "~2.1.3"
+  }
+}
