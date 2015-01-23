@@ -6,7 +6,7 @@
     'use strict'
 
     angular.module('app')
-        .controller('expensesController', function(){
+        .controller('expensesController', function(expensesDataService){
 
             var vm = this;
 
@@ -18,13 +18,7 @@
 
             function activate(){
 
-                vm.expenseItems = [
-
-                    {title:'Taxi', description:'To airport', amount: 89.95},
-                    {title:'Lunch', description:'At airport', amount: 15.40},
-                    {title:'Coffee', description:'Starbucks', amount: 4.93}
-
-                ];
+                vm.expenseItems = expensesDataService.getExpenses();
 
             }
 
